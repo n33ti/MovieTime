@@ -37,13 +37,13 @@ namespace MovieTime
         public List<Movie> GetMovies(int LanguageId = 0)
         {
             DbContextApp db = new DbContextApp();
-            return db.Movies.Where(a => a.LanguageId == LanguageId).ToList();
+            return db.Movies.Include("Languages").Where(a => a.LanguageId == LanguageId).ToList();
         }
 
         public List<Review> GetReviews(int MovieId)
         {
             DbContextApp db = new DbContextApp();
-            return db.Reviews.Where(a => a.MovieId == MovieId).ToList();
+            return db.Reviews.Include("movies").Where(a => a.MovieId == MovieId).ToList();
         }
     }
 }
