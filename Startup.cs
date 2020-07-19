@@ -32,7 +32,21 @@ namespace MovieTime
          options.SuppressModelStateInvalidFilter = true;
      
      });
-        }
+
+            //this is for generating swagger document
+            services.AddSwaggerGen(a =>
+            {
+                a.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+                {
+                    Title = "Movies REST API",
+                    Version = "v1"
+                });
+            });
+        
+
+
+
+    }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -47,6 +61,14 @@ namespace MovieTime
             app.UseRouting();
 
             app.UseAuthorization();
+
+            //telling application that we are using swagger
+            app.UseSwagger();
+            //this is used to generate Swagger Endpoint 
+            app.UseSwaggerUI(a =>
+            {
+                a.SwaggerEndpoint("/swagger/v1/swagger.json", "Movies REST API");
+            });
 
             app.UseEndpoints(endpoints =>
             {

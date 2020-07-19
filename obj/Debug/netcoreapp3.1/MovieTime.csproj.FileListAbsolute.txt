@@ -50,5 +50,6 @@ C:\Users\KIIT\source\repos\MovieTime\MovieTime\bin\Debug\netcoreapp3.1\runtimes\
 C:\Users\KIIT\source\repos\MovieTime\MovieTime\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\KIIT\source\repos\MovieTime\MovieTime\obj\Debug\netcoreapp3.1\MovieTime.csproj.CopyComplete
 C:\Users\KIIT\source\repos\MovieTime\MovieTime\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\KIIT\source\repos\MovieTime\MovieTime\obj\Debug\netcoreapp3.1\MovieTime.csproj.CoreCompileInputs.cache
-C:\Users\KIIT\source\repos\MovieTime\MovieTime\obj\Debug\netcoreapp3.1\MovieTime.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\KIIT\source\repos\MovieTime\MovieTime\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\KIIT\source\repos\MovieTime\MovieTime\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\KIIT\source\repos\MovieTime\MovieTime\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
